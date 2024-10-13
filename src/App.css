@@ -1,0 +1,16 @@
+.APP{
+    background: url("./assets/backgroundimage.svg");
+    width: 100%;
+    height: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    padding-top: 4%;
+
+
+    display: flex;
+    flex-direction: column;
+    gap:72px;
+
+
+}

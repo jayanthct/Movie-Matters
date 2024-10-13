@@ -1,0 +1,30 @@
+.card-container {
+    width: 24%;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+}
+
+.card img {
+    border-radius: 8px;
+    width: 100%;
+}
+
+.card-data {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 80%;
+    position: absolute;
+    box-shadow: 0 8px 24px #ff1a1a36;
+    bottom: -32;
+    left: 0;
+    right: 0;
+
+    margin-inline: auto;
+}

@@ -1,0 +1,41 @@
+.Ourcollabrations {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Ourcollabheadings {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+span {
+    font-family: "Gabarito", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #464646;
+}
+
+#secondword {
+    color: #FF0037;
+}
+
+span::first-letter {
+    font-size: 32px;
+}
+
+.companys {
+    display: flex;
+    gap: 24px;
+    justify-content: space-around;
+}
+
+.companys img {
+    width: 10%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    opacity: 0.4;
+}

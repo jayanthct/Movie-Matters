@@ -1,0 +1,64 @@
+.herosection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.HeroImages {
+    position: absolute;
+    width: 32%;
+}
+
+.heroimg1 {
+    top: 120px;
+    left:-200px;
+}
+
+.heroimg2 {
+    top: 120px;
+    right: -200px;
+}
+
+.Logo {
+    height:8%;
+    width: 8%;
+}
+
+.heroheading {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+}
+
+#primaryheading {
+    color: #FF1A1A;
+    font-family: "Marvin Visions";
+    font-size: 98px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100%;
+    letter-spacing: 3.92px;
+}
+
+#secondaryheading {
+    color: #464646;
+    text-align: center;
+    font-family: "Marvin Visions";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 100%;
+    letter-spacing: 1.6px;
+}
+
+.textshinyobj {
+    position: absolute;
+    right: -32px;
+    top: 36px;
+}

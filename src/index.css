@@ -1,0 +1,39 @@
+@import url(https://db.onlinewebfonts.com/c/34024de67e7902c685c4c771c10ec00e?family=Marvin+Visions+Bold);
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family:"Marvin Visions Bold", sans-serif;
+}
+
+html {
+    background: var(--background);
+    min-width: 360px;
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+body {
+    font-family: "Marvin Visions Bold", sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+    background-color: var(--background);
+}
+
+:root {
+    --primary-color: #FF1A1A;
+    --secondary-color: #464646;
+    --shadow-color: #e74c3c;
+    --background: #fff;
+    --primary-text: #333;
+}
