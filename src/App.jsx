@@ -9,8 +9,8 @@ function App() {
     <>
       <section className="APP">
         <Herosection />
+        <MovieCard Title="Spiderman" year="1990" director="SS Rajamouli"></MovieCard>
         <OurCollabrations />  
-        <MovieCard Title="Spiderman" descrption="Hello world"></MovieCard>
       </section>
     </>
   )

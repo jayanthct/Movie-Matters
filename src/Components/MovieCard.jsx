@@ -10,7 +10,8 @@ function MovieCard(props) {
                     <img src={spidy} alt="MoviePoster" />
                     <div className="card-data">
                         <h3>{props.Title}</h3>
-                        <p>{props.descrption}</p>
+                        <p>{props.year}</p>
+                        <p>{props.director}</p>
                     </div>
                 </article>
 
