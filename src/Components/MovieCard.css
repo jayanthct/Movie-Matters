@@ -1,6 +1,6 @@
 .card-container{
-    width: 304px;
-    height: auto;
+    width: 100%;
+    height: 100%;
    
 }
 .card-data *{
@@ -60,3 +60,11 @@
     visibility: visible;
 
 }
+
+.MovieGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    /* Add more styling as needed */
+  }
+  

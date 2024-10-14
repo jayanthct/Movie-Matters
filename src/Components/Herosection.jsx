@@ -6,7 +6,6 @@ import logo from '../assets/logo.png'
 import '../index.css';
 import './Herosection.css';
 import Input from './Input'
-import { SplitText } from "./SplitText";
 
 
 
@@ -18,7 +17,7 @@ function Herosection({search,bool}) {
        <img src={logo} alt="logo" className='Logo'/>
         <div className="heroheading">
           <h3 id="secondaryheading">Journey Back To</h3>
-          <SplitText text="Cinematic&nbsp;Magic" className="primary-heading-split" delay={50} />
+          <h3 id="primaryheading">Cinematic Magic</h3>
           <img src={shiny} alt="shiny" className="textshinyobj" />
         </div>
 

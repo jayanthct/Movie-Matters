@@ -35,21 +35,15 @@
     gap: 12px;
     position: relative;
 }
-.primary-heading-split {
+#primaryheading {
     color: #FF1A1A;
     font-family: "Marvin Visions", sans-serif;
     font-size: 98px;
     font-style: normal;
     font-weight: 800;
     line-height: 100%;
-    letter-spacing: 3.92px;
+    letter-spacing: 2px;
   }
-  
-  .letter {
-    display: inline-block;
-    /* Apply animations or other styles here */
-  }
-  
 
 
 #secondaryheading {
