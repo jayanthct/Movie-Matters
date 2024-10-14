@@ -2,12 +2,14 @@ import React, { useState } from 'react'
 import './Input.css';
 import searchicon from '../assets/search-line.svg'
 
-function Input({search}) {
+function Input({search,bool}) {
     const [searchmovie,setsearchmovie]= useState('');
     const handlesubmit=()=>{
+        bool(true);
         search(searchmovie);
     }
     return (
+        
         <>
             <div className="Inputfield">
 

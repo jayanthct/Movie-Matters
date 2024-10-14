@@ -1,0 +1,23 @@
+.letter {
+  display: inline-block;
+  will-change: transform, opacity;
+}
+
+.split-parent {
+  display: inline;
+  overflow: hidden;
+}
+
+.primary-heading-split {
+  color: #FF1A1A !important;
+  font-family: "Marvin Visions", sans-serif !important;
+  font-size: 98px !important;
+  font-style: normal !important;
+  font-weight: 800 !important;
+  line-height: 100% !important;
+  letter-spacing: 3.92px !important;
+}
+
+.primary-heading-split .letter {
+  font-size: 98px !important; /* Force font size through CSS */
+}

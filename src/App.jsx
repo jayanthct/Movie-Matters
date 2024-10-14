@@ -1,17 +1,18 @@
-import {useEffect,useState} from 'react'
+import { useEffect, useState } from 'react'
 import Herosection from './Components/Herosection'
 import OurCollabrations from './Components/OurCollabrations'
 import CardGrid from './Components/CardGrid'
 import './App.css'
 
 function App() {
-  const url="http://www.omdbapi.com/?i=tt3896198&apikey=5befd8b2"
-  const [movie,setmovie]=useState([]);
+  const url = "http://www.omdbapi.com/?i=tt3896198&apikey=5befd8b2"
+  const [movie, setmovie] = useState([]);
+  const [isInputed, setboolean] = useState(false);
 
-  const search =async (title)=>{
+  const search = async (title) => {
     const response = await fetch(`${url}&s=${title}`);
-    const data =await response.json();
-  
+    const data = await response.json();
+
     console.log(data.Search);
     setmovie(data.Search);
   }
@@ -19,9 +20,10 @@ function App() {
   return (
     <>
       <section className="APP">
-        <Herosection search={search}/>
-        <CardGrid list={movie}></CardGrid>
-        <OurCollabrations />  
+        <Herosection bool={setboolean} search={search} />
+        <CardGrid bool={isInputed} list={movie}></CardGrid>
+        {isInputed==false||movie&&movie.length==0?
+          (<OurCollabrations />):(null)}
       </section>
     </>
   )
