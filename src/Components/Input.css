@@ -41,6 +41,8 @@ color: #6a73809c;
     background: #FF0037;
     padding: 24px;
     cursor: pointer;
+    outline: none;
+    border: none;
 }
 
 #PrimaryButton p {

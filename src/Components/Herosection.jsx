@@ -9,7 +9,7 @@ import Input from './Input'
 
 
 
-function Herosection() {
+function Herosection({search}) {
   return (
     <>
       <section className="herosection">
@@ -22,7 +22,7 @@ function Herosection() {
 
         <img src={filmclip} alt="flimclip" className='HeroImages heroimg1'/>
         <img src={popcorn} alt="flimclip" className='HeroImages heroimg2' />
-        <section className='HeroContent'><Input></Input></section>
+        <section className='HeroContent'><Input search={search}></Input></section>
       </section>
     </>
 

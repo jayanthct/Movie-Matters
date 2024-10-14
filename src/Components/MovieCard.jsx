@@ -2,16 +2,15 @@ import React from 'react'
 import spidy from '../assets/spidy.png'
 import './MovieCard.css'
 
-function MovieCard(props) {
+function MovieCard({Poster,Title,Year}) {
     return (
         <>
             <div className="card-container">
                 <article className="card">
-                    <img src={spidy} alt="MoviePoster" />
+                    <img src={Poster} alt="MoviePoster" />
                     <div className="card-data">
-                        <h3>{props.Title}</h3>
-                        <p>{props.year}</p>
-                        <p>{props.director}</p>
+                        <h3>{Title}</h3>
+                        <p>{Year}</p>
                     </div>
                 </article>
 
