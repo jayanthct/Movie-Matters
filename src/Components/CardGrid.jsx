@@ -24,22 +24,11 @@ function CardGrid({ bool, list }) {
 
   return (
     <>
-      {/* Show error when the list is empty */}
-      {!bool || (list && list.length > 0) ? (
+      {!bool||list && list.length > 0 ? (
         <div className="MovieGrid">
-          {/* Ensure that the cards display even if there are less than 4 items */}
-          {currentItems.length > 0 ? (
-            currentItems.map((e, i) => (
-              <MovieCard key={i} Poster={e.Poster} Title={e.Title} Year={e.Year}></MovieCard>
-            ))
-          ) : (
-            <div className="errorcontainer">
-              <img src={error} alt="ErrorIllustraion" />
-              <div className="Ourcollabheadings">
-                <span>Try</span><span id='secondword'>Again</span>
-              </div>
-            </div>
-          )}
+          {currentItems.map((e, i) => (
+            <MovieCard key={i} Poster={e.Poster} Title={e.Title} Year={e.Year} />
+          ))}
         </div>
       ) : (
         <div className="errorcontainer">
@@ -51,7 +40,7 @@ function CardGrid({ bool, list }) {
       )}
 
       {/* Always render pagination (even if list length is less than 4) */}
-      {list && (
+      {!bool||list && (
         <PaginationRounded
           count={Math.max(1, Math.ceil(list.length / itemsPerPage))} // Ensure at least 1 page
           page={page}
