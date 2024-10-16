@@ -7,7 +7,7 @@ function MovieCard({Poster,Title,Year}) {
         <>
             <div className="card-container">
                 <article className="card">
-                    <img src={Poster=='N/A'?(unavailable):Poster} alt="MoviePoster" />
+                    <img src={Poster==='N/A'?(unavailable):Poster} alt="MoviePoster" />
                     <div className="card-data">
                         <h3>{Title}</h3>
                         <p>{Year}</p>

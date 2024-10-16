@@ -1,18 +1,21 @@
-.card-container{
+.card-container {
     width: 100%;
     height: 100%;
-   
+
 }
-.card-data *{
+
+.card-data * {
     font-family: "Gabarito", sans-serif;
 }
-.card-data h3{
+
+.card-data h3 {
     font-size: 28px;
     font-weight: 600;
 }
-.card-data p{
- color: #e9e9e9;
- font-weight: lighter;
+
+.card-data p {
+    color: #e9e9e9;
+    font-weight: lighter;
 }
 
 .card {
@@ -20,20 +23,30 @@
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 5px 5px 15px rgba(84, 84, 84, 0.285);
-
-}
-
-.card img{
-    border-radius: 8px;
+    max-height: 420px;
+    min-height: 420px;
     width: 100%;
-    display: block;
-    transition: transform 0.5s ease-out;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: fill;
 }
 
-.card-data{
+.card img {
+    border-radius: 8px;
+    width:100%;
+    height: 100vh;
+    transition: transform 0.5s ease-out;
+    object-fit: fill;
+
+
+}
+
+.card-data {
     height: 0;
     width: 100%;
-    background: linear-gradient(transparent,#161616 88%);
+    background: linear-gradient(transparent, #161616 88%);
     position: absolute;
     border-radius: 8px;
     left: 0;
@@ -51,23 +64,23 @@
     color: white;
 }
 
-.card:hover img{
+.card:hover img {
     transform: scale(1.2);
 }
 
-.card:hover .card-data{
+.card:hover .card-data {
     height: 100%;
     visibility: visible;
 
 }
-.card:hover{
+
+.card:hover {
     cursor: pointer;
 }
+
 
 .MovieGrid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
-    /* Add more styling as needed */
-  }
-  
+}

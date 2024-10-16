@@ -27,7 +27,7 @@
 }
 
 .Input::placeholder {
-color: #6a73809c;
+    color: #6a73809c;
 
 }
 
@@ -38,11 +38,16 @@ color: #6a73809c;
     justify-content: center;
     align-items: center;
     border-radius: 6px;
-    background: #FF0037;
+    background: #FF1A1A;
     padding: 24px;
     cursor: pointer;
     outline: none;
     border: none;
+
+}
+
+#PrimaryButton:hover {
+    background: #dc0000;
 }
 
 #PrimaryButton p {

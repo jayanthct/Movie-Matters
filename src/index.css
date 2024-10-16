@@ -12,17 +12,13 @@
     font-family:"Marvin Visions Bold", sans-serif;
 }
 
-html {
-    background: var(--background);
-    min-width: 360px;
-    scroll-behavior: smooth;
-    
-}
 
-body {
-    margin: 0;
+html, body {
+    height: 100vh;
+    width: 100vw;
     overflow-x: hidden;
 }
+
 body {
     font-family: "Marvin Visions Bold", sans-serif;
     line-height: 1.6;

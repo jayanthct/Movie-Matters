@@ -5,8 +5,8 @@ import CardGrid from './Components/CardGrid'
 import './App.css'
 import PaginationRounded from './Components/Pagination'
 
+const url = import.meta.env.VITE_API_KEY;
 function App() {
-  const url = "http://www.omdbapi.com/?i=tt3896198&apikey=5befd8b2"
   const [movie, setmovie] = useState([]);
   const [isInputed, setboolean] = useState(false);
 
