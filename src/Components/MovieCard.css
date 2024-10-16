@@ -84,3 +84,42 @@
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
 }
+
+@media screen and (max-width: 480px) {
+    .card-data {
+        height: 100%; /* Make the card data fully visible */
+        visibility: visible; /* Ensure it's visible without hover */
+    }
+
+    .card:hover .card-data {
+        height: 100%; /* Override hover effect */
+    }
+
+    .card img {
+        transform: none; /* Disable the image zoom on hover */
+    }
+
+    .card:hover img {
+        transform: none; /* Override hover zoom */
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .card-data {
+        height: 100%; /* Make the card data fully visible */
+        visibility: visible; /* Ensure it's visible without hover */
+    }
+
+    .card:hover .card-data {
+        height: 100%; /* Override hover effect */
+    }
+
+    .card img {
+        transform: none; /* Disable the image zoom on hover */
+    }
+
+    .card:hover img {
+        transform: none; /* Override hover zoom */
+    }
+}

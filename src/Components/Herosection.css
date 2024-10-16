@@ -71,3 +71,120 @@
     right: -32px;
     top: 36px;
 }
+
+
+
+
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+    .herosection {
+        gap: 52px;
+    }
+
+    #primaryheading {
+        font-size: 72px;
+        /* Scale down the primary heading */
+    }
+
+    #secondaryheading {
+        font-size: 32px;
+        /* Scale down the secondary heading */
+    }
+
+
+    #caption {
+        font-size: 14px;
+        /* Adjust caption size */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .herosection {
+        gap: 36px;
+    }
+
+    #primaryheading {
+        font-size: 56px;
+        /* Further reduce primary heading size */
+    }
+
+    #secondaryheading {
+        font-size: 28px;
+        /* Further reduce secondary heading size */
+    }
+
+    .HeroImages {
+        width: 50%;
+    }
+
+    .heroimg1 {
+        left: -136px;
+        top: 144px;
+    }
+
+    .heroimg2 {
+        right: -136px;
+        top: 144px;
+    }
+
+
+    #caption {
+        font-size: 12px;
+        /* Further adjust caption size */
+    }
+
+    .Logo {
+        width: 56px;
+        height: 36px;
+    }
+
+    .textshinyobj {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .herosection {
+        gap: 24px;
+    }
+
+    #primaryheading {
+        font-size: 42px;
+        /* Scale down for mobile */
+    }
+
+    #secondaryheading {
+        font-size: 24px;
+        /* Adjust secondary heading for mobile */
+    }
+
+    .HeroImages {
+        width: 75%;
+    }
+
+    .heroimg1 {
+        left: -136px;
+        top: 196px;
+    }
+
+    .heroimg2 {
+        right: -136px;
+        top: 196px;
+    }
+
+    #caption {
+        font-size: 10px;
+        /* Further adjust caption size */
+        padding: 0 16px;
+        /* Add padding for readability */
+    }
+
+    .Logo {
+        width: 36px;
+        height: 24px;
+    }
+
+    .textshinyobj {
+        display: none;
+    }
+}
