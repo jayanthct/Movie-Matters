@@ -3,7 +3,9 @@
     gap: 8px;
     align-items: center;
     justify-content: space-between;
-    width: 600px;
+    width: 720px; /* Adjusts to the container width */
+    max-width: 600px; /* Maintains the original width on larger screens */
+    margin: 0 auto; /* Centering on smaller screens */
 }
 
 .Input {
@@ -16,19 +18,19 @@
     font-family: "Gabarito", sans-serif;
     color: #6a7380;
     font-size: 16px;
-    box-shadow: 0px 299px 84px 0px rgba(255, 0, 55, 0.00), 0px 191px 77px 0px rgba(255, 0, 55, 0.01), 0px 108px 65px 0px rgba(255, 0, 55, 0.03), 0px 48px 48px 0px rgba(255, 0, 55, 0.05), 0px 12px 26px 0px rgba(255, 0, 55, 0.06);
+    box-shadow: 0px 299px 84px 0px rgba(255, 0, 55, 0.00), 
+                0px 191px 77px 0px rgba(255, 0, 55, 0.01), 
+                0px 108px 65px 0px rgba(255, 0, 55, 0.03), 
+                0px 48px 48px 0px rgba(255, 0, 55, 0.05), 
+                0px 12px 26px 0px rgba(255, 0, 55, 0.06);
 }
-
-
 
 .Input:focus {
     outline-color: #717171a2;
-
 }
 
 .Input::placeholder {
     color: #6a73809c;
-
 }
 
 #PrimaryButton {
@@ -39,11 +41,10 @@
     align-items: center;
     border-radius: 6px;
     background: #FF1A1A;
-    padding: 24px;
+    padding: 0 24px; /* Adjust padding for smaller screens */
     cursor: pointer;
     outline: none;
     border: none;
-
 }
 
 #PrimaryButton:hover {
@@ -55,4 +56,31 @@
     color: white;
     font-size: 18px;
     font-weight: 600;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .Inputfield {
+        flex-direction: column; /* Stack input and button vertically */
+        gap: 16px;
+        width: 100%; /* Ensure full width */
+        max-width: 100%; /* Remove max-width restriction */
+    }
+
+    #PrimaryButton {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Input {
+        height: 48px;
+        font-size: 14px;
+    }
+
+    #PrimaryButton {
+        height: 48px;
+        width: 75%;
+        font-size: 16px; /* Slightly reduce button font size for mobile */
+    }
 }

@@ -4,6 +4,7 @@
     gap: 36px;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .Ourcollabheadings {
@@ -29,8 +30,9 @@ span::first-letter {
 
 .companys {
     display: flex;
-    gap: 24px;
-    justify-content: space-around;
+    gap:72px;
+    justify-content: center; /* Center images */
+    flex-wrap: wrap; /* Enable wrapping */
 }
 
 .companys img {
@@ -38,4 +40,53 @@ span::first-letter {
     aspect-ratio: 3/2;
     object-fit: contain;
     opacity: 0.4;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+    .companys img {
+        width: 15%; /* Increase the image size slightly for larger screens */
+    }
+
+    .Ourcollabheadings span {
+        font-size: 20px; /* Adjust heading size */
+    }
+
+    span::first-letter {
+        font-size: 28px; /* Adjust the first letter size */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .companys img {
+        width: 20%; /* Images are larger, but wrap */
+    }
+
+    .Ourcollabheadings span {
+        font-size: 18px; /* Further adjust heading size */
+    }
+
+    span::first-letter {
+        font-size: 24px;
+    }
+    .companys{
+        gap: 36px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .companys{
+        gap:24px;
+    }
+    .companys img {
+        width: 30%; /* Larger size for small screens, with wrap */
+    }
+
+    .Ourcollabheadings span {
+        font-size: 16px; /* Further reduce heading size for mobile */
+    }
+
+    span::first-letter {
+        font-size: 20px;
+    }
 }
