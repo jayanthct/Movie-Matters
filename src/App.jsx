@@ -13,8 +13,6 @@ function App() {
   const search = async (title) => {
     const response = await fetch(`${url}&s=${title}`);
     const data = await response.json();
-
-    console.log(data.Search);
     setmovie(data.Search);
   }
 

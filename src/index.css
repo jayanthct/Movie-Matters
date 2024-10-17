@@ -1,11 +1,9 @@
 @font-face {
     font-family: 'Marvin Visions Bold';
-    /* Same font family */
     src: url('./fonts/MarvinVisions-Bold.otf') format('otf'),
         url('./fonts/MarvinVisions-Bold.woff') format('woff'),
         url('./fonts/MarvinVisions-Bold.woff2') format('woff2');
     font-weight: bold;
-    /* Bold weight */
     font-style: normal;
     font-display: swap;
 }
