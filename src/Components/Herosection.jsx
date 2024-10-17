@@ -17,7 +17,7 @@ function Herosection({search,bool}) {
        <img src={logo} alt="logo" className='Logo'/>
         <div className="heroheading">
           <h3 id="secondaryheading">Journey Back To</h3>
-          <h3 id="primaryheading">Cinematic Magic</h3>
+          <h3 id="primaryheading"><span id='firstletterheading'>Cinematic&nbsp;</span> <span id='secondletterheading'>Magic</span></h3>
           <p id="caption">Discover your next favorite film. Search Title explore movies from around the world.</p>
           <img src={shiny} alt="shiny" className="textshinyobj" />
         </div>

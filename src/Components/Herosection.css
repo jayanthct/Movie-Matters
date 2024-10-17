@@ -1,4 +1,10 @@
-/* Base styles */
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');
+
+@font-face {
+    font-family: 'Marvin Visions Variable';
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/756881/MarvinVisionsTrial-Variable.ttf");
+}
+
 .herosection {
     text-align: center;
     width: 100%;
@@ -45,25 +51,26 @@
     position: relative;
 }
 
-#primaryheading {
+#primaryheading span {
     color: #FF1A1A;
-    font-family: "Marvin Visions", sans-serif;
+    font-family: 'Marvin Visions Variable', sans-serif;
     font-size: 98px;
     font-style: normal;
     font-weight: 800;
     line-height: 100%;
-    letter-spacing: 2px;
+    letter-spacing: 6px;
 }
+
+
 
 #secondaryheading {
     color: #464646;
     text-align: center;
-    font-family: "Marvin Visions";
+    font-family: 'Marvin Visions Variable', sans-serif;
     font-size: 40px;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 200;
     line-height: 100%;
-    letter-spacing: 1.6px;
 }
 
 .textshinyobj {
@@ -74,15 +81,15 @@
 
 
 
-
 /* Responsive adjustments */
 @media screen and (max-width: 1024px) {
     .herosection {
         gap: 52px;
     }
 
-    #primaryheading {
+    #primaryheading span{
         font-size: 72px;
+        letter-spacing: 1px;
         /* Scale down the primary heading */
     }
 
@@ -103,8 +110,9 @@
         gap: 36px;
     }
 
-    #primaryheading {
+    #primaryheading span{
         font-size: 56px;
+        letter-spacing: 1px;
         /* Further reduce primary heading size */
     }
 
@@ -148,9 +156,10 @@
         gap: 24px;
     }
 
-    #primaryheading {
+    #primaryheading span{
         font-size: 42px;
         /* Scale down for mobile */
+        letter-spacing: 1px;
     }
 
     #secondaryheading {
